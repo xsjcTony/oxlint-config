@@ -1,0 +1,11 @@
+# Package manager
+.pnpm-store/
+
+# Node.js
+node_modules/
+
+# Bundler
+/dist/
+
+# IDE
+/.idea/

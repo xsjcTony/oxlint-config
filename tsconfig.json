@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "~/*": ["./src/*"],
+      "~configs": ["./src/configs/index.ts"],
+      "~configs/*": ["./src/configs/*"],
+      "~types": ["./src/types/index.ts"],
+      "~types/*": ["./src/types/*"],
+    }
+  },
+  "include": [
+    "**/*.ts",
+  ],
+}
