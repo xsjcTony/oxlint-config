@@ -35,7 +35,7 @@ function perfectionistRules(options: PerfectionistOptions): OxlintConfig['rules'
         locales: 'en-AU',
         sortBy: 'path',
         internalPattern: sortImports.internalPatternSymbols
-          .map(symbol => `^${symbol}(?:[^/]+(?:/[^/]+)?|/[^/]+)$`),
+          .map(symbol => `^${symbol}/?[^/]+(?:/[^/]+)*$`),
         partitionByComment: false,
         partitionByNewLine: sortImports.partitionByNewLine,
         newlinesBetween: 'ignore',
