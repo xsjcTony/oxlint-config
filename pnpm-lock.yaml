@@ -38,9 +38,6 @@ importers:
       eslint-plugin-unicorn:
         specifier: ^64.0.0
         version: 64.0.0(eslint@10.3.0(jiti@2.7.0))
-      eslint-plugin-unused-imports:
-        specifier: ^4.4.1
-        version: 4.4.1(eslint@10.3.0(jiti@2.7.0))
       globals:
         specifier: ^17.6.0
         version: 17.6.0
@@ -1131,15 +1128,6 @@ packages:
     engines: {node: ^20.10.0 || >=21.0.0}
     peerDependencies:
       eslint: '>=9.38.0'
-
-  eslint-plugin-unused-imports@4.4.1:
-    resolution: {integrity: sha512-oZGYUz1X3sRMGUB+0cZyK2VcvRX5lm/vB56PgNNcU+7ficUCKm66oZWKUubXWnOuPjQ8PvmXtCViXBMONPe7tQ==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^8.0.0-0 || ^7.0.0 || ^6.0.0 || ^5.0.0
-      eslint: ^10.0.0 || ^9.0.0 || ^8.0.0
-    peerDependenciesMeta:
-      '@typescript-eslint/eslint-plugin':
-        optional: true
 
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
@@ -3265,10 +3253,6 @@ snapshots:
       regjsparser: 0.13.1
       semver: 7.7.4
       strip-indent: 4.1.1
-
-  eslint-plugin-unused-imports@4.4.1(eslint@10.3.0(jiti@2.7.0)):
-    dependencies:
-      eslint: 10.3.0(jiti@2.7.0)
 
   eslint-scope@9.1.2:
     dependencies:

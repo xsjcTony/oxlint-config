@@ -3,8 +3,7 @@ import type { OxlintConfig } from 'oxlint'
 import globals from 'globals'
 
 
-// oxlint-disable-next-line unused-imports#js/no-unused-vars
-export function composeNodeConfig(options: NodeOptions): OxlintConfig {
+export function composeNodeConfig(_options: NodeOptions): OxlintConfig {
   return {
     env: {
       node: true,

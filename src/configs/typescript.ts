@@ -39,7 +39,7 @@ export function composeTypeScriptConfig(options: TypeScriptOptions): OxlintConfi
           'typescript/consistent-indexed-object-style': 'off',
           'typescript/consistent-type-definitions': 'off',
           'typescript/no-empty-object-type': 'off',
-          'unused-imports#js/no-unused-vars': 'off',
+          'no-unused-vars': 'off',
           'no-var': 'off',
         },
       },

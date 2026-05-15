@@ -1,4 +1,2 @@
-import type { OptionsIsInEditor } from '~types'
-
-
-export interface JavaScriptOptions extends OptionsIsInEditor {}
+// oxlint-disable-next-line typescript/no-empty-object-type
+export interface JavaScriptOptions {}

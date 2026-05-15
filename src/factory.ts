@@ -81,7 +81,6 @@ export function defineConfig(
     ],
     jsPlugins: [
       { name: 'eslint#js', specifier: 'oxlint-plugin-eslint' },
-      { name: 'unused-imports#js', specifier: 'eslint-plugin-unused-imports' },
       { name: 'unicorn#js', specifier: 'eslint-plugin-unicorn' },
       { name: 'node#js', specifier: 'eslint-plugin-n' },
       ...enableJsPlugin(!!stylisticOptions, [
