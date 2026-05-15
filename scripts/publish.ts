@@ -39,5 +39,5 @@ console.log('\n--------------')
 
 
 releaseTag
-  ? await $`pnpm publish --access public --no-git-checks --tag ${releaseTag}`
-  : await $`pnpm publish --access public --no-git-checks`
+  ? await $`pnpm publish --access public --ignore-scripts --no-git-checks --tag ${releaseTag}`
+  : await $`pnpm publish --access public --ignore-scripts --no-git-checks`
