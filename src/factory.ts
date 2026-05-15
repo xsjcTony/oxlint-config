@@ -31,7 +31,7 @@ export function defineConfig(
     options: globalOptions = {},
 
     oxlintOptions = {},
-    overrides = [],
+    overrides: userOverrides = [],
 
     componentExtensions = [],
     isInEditor = !!(
@@ -118,7 +118,6 @@ export function defineConfig(
       respectEslintDisableDirectives: true,
       ...oxlintOptions,
     },
-    overrides,
   }
 
 
@@ -276,6 +275,11 @@ export function defineConfig(
   // merge configs
   for (const moduleConfig of moduleConfigs)
     mergeOxlintConfigs(baseConfig, moduleConfig)
+
+
+  // add user overrides at the end
+  if (userOverrides.length > 0)
+    baseConfig.overrides = [...baseConfig.overrides ?? [], ...userOverrides]
 
 
   return baseConfig
