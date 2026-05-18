@@ -29,7 +29,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
     anchorIsValid,
     ariaRole,
     autocompleteValid,
-    // controlHasAssociatedLabel,
+    controlHasAssociatedLabel,
     headingHasContent,
     imgRedundantAlt,
     interactiveSupportsFocus,
@@ -37,8 +37,8 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
     mediaHasCaption,
     noAutofocus,
     noDistractingElements,
-    // noInteractiveElementToNoninteractiveRole,
-    // noNoninteractiveElementInteractions,
+    noInteractiveElementToNoninteractiveRole,
+    noNoninteractiveElementInteractions,
     noNoninteractiveElementToInteractiveRole,
     noNoninteractiveTabindex,
     noStaticElementInteractions,
@@ -72,10 +72,16 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
       { inputComponents: ['input', ...autocompleteValid?.extraInputComponents ?? []] },
     ],
     'jsx-a11y/click-events-have-key-events': 'error',
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
-    'jsx-a11y/control-has-associated-label': ['error', { ...controlHasAssociatedLabel }],
-    */
+    'jsx-a11y/control-has-associated-label': [
+      'error',
+      {
+        controlComponents: controlHasAssociatedLabel?.controlComponents ?? [],
+        depth: controlHasAssociatedLabel?.depth ?? 2,
+        ignoreElements: controlHasAssociatedLabel?.ignoreElements ?? [],
+        ignoreRoles: controlHasAssociatedLabel?.ignoreRoles ?? [],
+        labelAttributes: controlHasAssociatedLabel?.labelAttributes ?? [],
+      },
+    ],
     'jsx-a11y/heading-has-content': [
       'error',
       { components: headingHasContent?.extraComponents ?? null },
@@ -160,8 +166,6 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ],
       },
     ],
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
     'jsx-a11y/no-interactive-element-to-noninteractive-role': [
       'error',
       {
@@ -169,9 +173,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ...noInteractiveElementToNoninteractiveRole,
       },
     ],
-    */
     // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
     'jsx-a11y/no-noninteractive-element-interactions': [
       'error',
       {
@@ -186,7 +188,6 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ],
       },
     ],
-    */
     'jsx-a11y/no-noninteractive-element-to-interactive-role': [
       'error',
       {

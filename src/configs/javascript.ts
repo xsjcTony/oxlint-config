@@ -97,13 +97,13 @@ const javascriptRules: OxlintConfig['rules'] = {
       memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
     },
   ],
+  'prefer-arrow-callback': [
+    'error',
+    { allowNamedFunctions: false, allowUnboundThis: true },
+  ],
 }
 
 
 const javascriptJsPluginRules: OxlintConfig['rules'] = {
   'eslint#js/one-var': ['error', 'never'],
-  'eslint#js/prefer-arrow-callback': [
-    'error',
-    { allowNamedFunctions: false, allowUnboundThis: true },
-  ],
 }

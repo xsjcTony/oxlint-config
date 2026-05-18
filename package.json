@@ -42,12 +42,12 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
   },
   "peerDependencies": {
-    "oxlint": "^1.64.0"
+    "oxlint": "^1.65.0"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tanstack/eslint-plugin-query": "^5.100.10",
-    "@tanstack/eslint-plugin-router": "^1.161.6",
+    "@tanstack/eslint-plugin-router": "^1.162.0",
     "eslint": "^10.3.0",
     "eslint-plugin-antfu": "^3.2.3",
     "eslint-plugin-n": "^18.0.1",
@@ -57,19 +57,19 @@
     "eslint-plugin-unicorn": "^64.0.0",
     "globals": "^17.6.0",
     "local-pkg": "^1.1.2",
-    "oxlint-plugin-eslint": "^1.64.0",
+    "oxlint-plugin-eslint": "^1.65.0",
     "oxlint-tsgolint": "^0.22.1"
   },
   "devDependencies": {
     "@types/node": "^22.19.19",
     "bumpp": "^11.1.0",
     "changelogithub": "^14.0.0",
-    "lint-staged": "^17.0.4",
-    "oxlint": "^1.64.0",
+    "lint-staged": "^17.0.5",
+    "oxlint": "^1.65.0",
     "publint": "^0.3.21",
     "simple-git-hooks": "^2.13.1",
     "tsdown": "^0.22.0",
-    "tsx": "^4.22.0",
+    "tsx": "^4.22.1",
     "typescript": "^6.0.3",
     "zx": "^8.8.5"
   },

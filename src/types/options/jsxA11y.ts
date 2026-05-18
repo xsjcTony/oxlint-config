@@ -48,8 +48,6 @@ export interface JsxA11yOptions extends OptionsFiles {
      *
      * @see https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/control-has-associated-label
      */
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
     controlHasAssociatedLabel?: {
       labelAttributes?: string[]
       controlComponents?: string[]
@@ -57,7 +55,6 @@ export interface JsxA11yOptions extends OptionsFiles {
       ignoreRoles?: string[]
       depth?: number
     }
-    */
 
     /**
      * For `jsx-a11y/heading-has-content` rule.
@@ -164,22 +161,16 @@ export interface JsxA11yOptions extends OptionsFiles {
      *
      * @see https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-interactive-element-to-noninteractive-role
      */
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
     noInteractiveElementToNoninteractiveRole?: Record<string, string[]>
-    */
 
     /**
      * For `jsx-a11y/no-noninteractive-element-interactions` rule.
      *
      * @see https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-element-interactions
      */
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
-    /*
     noNoninteractiveElementInteractions?: {
       extraHandlers?: string[]
     }
-    */
 
     /**
      * For `jsx-a11y/no-noninteractive-element-to-interactive-role` rule.
