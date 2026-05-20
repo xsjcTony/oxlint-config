@@ -1,5 +1,5 @@
-import type { OptionsFiles, OptionsHasTypeScript } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { OptionsFiles, OptionsHasTypeScript } from '~types'
 
 
 export interface ReactOptions extends OptionsFiles, OptionsHasTypeScript {

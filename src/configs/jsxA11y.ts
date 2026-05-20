@@ -1,5 +1,5 @@
-import type { JsxA11yOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { JsxA11yOptions } from '~types'
 import { GLOB_JSX, GLOB_TSX } from '~/globs'
 
 

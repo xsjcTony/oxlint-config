@@ -1,5 +1,5 @@
-import type { TanStackQueryOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { TanStackQueryOptions } from '~types'
 import { GLOB_SRC } from '~/globs'
 
 

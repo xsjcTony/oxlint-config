@@ -1,5 +1,5 @@
-import type { VitestOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { VitestOptions } from '~types'
 import { GLOB_UNIT_TESTS } from '~/globs'
 
 

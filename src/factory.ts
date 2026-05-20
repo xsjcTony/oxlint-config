@@ -1,7 +1,7 @@
 // oxlint-disable unicorn#js/prefer-single-call
 
-import type { ConfigOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { ConfigOptions } from '~types'
 import { isPackageExists } from 'local-pkg'
 import {
   composeIgnorePatterns,

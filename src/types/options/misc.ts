@@ -1,5 +1,5 @@
-import type { StylisticBaseOptions } from '~types'
 import type { OxlintOverride } from 'oxlint'
+import type { StylisticBaseOptions } from '~types'
 
 
 export interface OptionsComponentExtensions {

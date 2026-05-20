@@ -1,5 +1,5 @@
-import type { PlaywrightOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { PlaywrightOptions } from '~types'
 import { GLOB_E2E_TESTS } from '~/globs'
 
 

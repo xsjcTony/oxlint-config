@@ -1,8 +1,10 @@
+import type { OxlintConfig } from 'oxlint'
+
+
 /**
  * This file is for configuring the files and directories that should be ignored by Oxlint
  */
 import type { IgnoreOptions } from '~/types'
-import type { OxlintConfig } from 'oxlint'
 import { GLOB_EXCLUDE } from '~/globs'
 
 

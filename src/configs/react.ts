@@ -1,5 +1,5 @@
-import type { ReactOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { ReactOptions } from '~types'
 import { GLOB_SRC } from '~/globs'
 
 

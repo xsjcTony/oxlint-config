@@ -1,5 +1,5 @@
-import type { UnicornOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { UnicornOptions } from '~types'
 
 
 export function composeUnicornConfig(options: UnicornOptions): OxlintConfig {

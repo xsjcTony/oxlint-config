@@ -1,5 +1,5 @@
-import type { TanStackRouterOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { TanStackRouterOptions } from '~types'
 import { GLOB_SRC } from '~/globs'
 
 

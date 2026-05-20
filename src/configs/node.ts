@@ -1,5 +1,5 @@
-import type { NodeOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { NodeOptions } from '~types'
 import globals from 'globals'
 
 

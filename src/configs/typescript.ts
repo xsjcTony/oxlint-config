@@ -1,5 +1,5 @@
-import type { TypeScriptOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { TypeScriptOptions } from '~types'
 import { GLOB_DTS, GLOB_TS, GLOB_TSX } from '~/globs'
 
 

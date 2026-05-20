@@ -1,5 +1,5 @@
-import type { StylisticBaseOptions, StylisticOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { StylisticBaseOptions, StylisticOptions } from '~types'
 
 
 type FilledStylisticConfig = Required<StylisticBaseOptions>

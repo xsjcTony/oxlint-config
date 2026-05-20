@@ -1,5 +1,5 @@
-import type { PerfectionistOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { PerfectionistOptions } from '~types'
 
 
 export function composePerfectionistConfig(options: PerfectionistOptions): OxlintConfig {
@@ -41,8 +41,8 @@ function perfectionistRules(options: PerfectionistOptions): OxlintConfig['rules'
         newlinesBetween: 'ignore',
         newlinesInside: 'ignore',
         groups: sortImports.typeImportFirst
-          ? ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index']
-          : ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type'],
+          ? ['type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index']
+          : ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index'],
         customGroups: [],
         environment: sortImports.environment,
         useExperimentalDependencyDetection: true,

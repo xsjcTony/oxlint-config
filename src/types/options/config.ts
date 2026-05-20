@@ -1,3 +1,4 @@
+import type { OxlintConfig, OxlintOverride } from 'oxlint'
 import type {
   IgnoreOptions,
   ImportOptions,
@@ -17,7 +18,6 @@ import type {
   VitestOptions,
   VueOptions,
 } from '~types'
-import type { OxlintConfig, OxlintOverride } from 'oxlint'
 
 
 export interface ConfigOptions extends OptionsComponentExtensions, OptionsIsInEditor {

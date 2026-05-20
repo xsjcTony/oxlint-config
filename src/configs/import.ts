@@ -1,5 +1,5 @@
-import type { ImportOptions } from '~types'
 import type { OxlintConfig } from 'oxlint'
+import type { ImportOptions } from '~types'
 
 
 export function composeImportConfig(options: ImportOptions): OxlintConfig {
