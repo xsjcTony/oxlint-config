@@ -41,8 +41,8 @@ function perfectionistRules(options: PerfectionistOptions): OxlintConfig['rules'
         newlinesBetween: 'ignore',
         newlinesInside: 'ignore',
         groups: sortImports.typeImportFirst
-          ? ['type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index']
-          : ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index'],
+          ? ['side-effect', 'side-effect-style', 'style', 'type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index']
+          : ['side-effect', 'side-effect-style', 'style', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type-builtin', 'type-external', 'type-internal', 'type-parent', 'type-sibling', 'type-index'],
         customGroups: [],
         environment: sortImports.environment,
         useExperimentalDependencyDetection: true,
