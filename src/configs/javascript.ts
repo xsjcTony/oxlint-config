@@ -1,9 +1,10 @@
 import type { OxlintConfig } from 'oxlint'
+import type { JavaScriptOptions } from '~types'
 import globals from 'globals'
 import { GLOB_SRC, GLOB_SRC_EXT } from '~/globs'
 
 
-export function composeJavaScriptConfig(): OxlintConfig {
+export function composeJavaScriptConfig(_options: JavaScriptOptions): OxlintConfig {
   return {
     env: {
       browser: true,

@@ -131,7 +131,6 @@ export function defineConfig(
   // javascript
   moduleConfigs.push(
     composeJavaScriptConfig({
-      isInEditor,
       ...javascriptOptions,
     }),
   )
