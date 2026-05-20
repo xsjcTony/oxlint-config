@@ -64,6 +64,8 @@ function reactRules(options: ReactOptions): OxlintConfig['rules'] {
     ],
     'react/style-prop-object': ['error', { allow: ruleOptions.stylePropObject?.allowedComponents }],
     'react/void-dom-elements-no-children': 'error',
+    'react/no-object-type-as-default-prop': 'error',
+    'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
 
     // react-hooks rules
     'react/rules-of-hooks': 'error',
@@ -142,8 +144,6 @@ const jsxTypeScriptRules: OxlintConfig['rules'] = {
 const reactJsPluginRules: OxlintConfig['rules'] = {
   'react#js/destructuring-assignment': ['error', 'always', { destructureInSignature: 'always' }],
   'react#js/no-deprecated': 'error',
-  'react#js/no-object-type-as-default-prop': 'error',
-  'react#js/no-unstable-nested-components': ['error', { allowAsProps: true }],
 }
 
 

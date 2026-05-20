@@ -71,8 +71,7 @@ function importTypescriptRules(options: ImportOptions): OxlintConfig['rules'] {
 
 
 const importStylisticRules: OxlintConfig['rules'] = {
-  // TODO: PR pending review: https://github.com/oxc-project/oxc/pull/19142
-  // 'import/newline-after-import': ['error', { count: 2, exactCount: true, considerComments: true }],
+  'import/newline-after-import': ['error', { count: 2, exactCount: true, considerComments: true }],
 }
 
 
