@@ -122,7 +122,7 @@ function unicornJsPluginRules(): OxlintConfig['rules'] {
     'unicorn#js/escape-case': ['error', 'uppercase'],
     'unicorn#js/number-literal-case': ['error', { hexadecimalValue: 'uppercase' }],
     'unicorn#js/no-for-loop': 'error',
-    'unicorn#js/prefer-export-from': ['error', { ignoreUsedVariables: true }],
+    'unicorn#js/prefer-export-from': ['error', { checkUsedVariables: true }],
     'unicorn#js/prefer-single-call': 'error',
     'unicorn#js/prefer-switch': ['error', { minimumCases: 2, emptyDefaultCase: 'do-nothing-comment' }],
   }
