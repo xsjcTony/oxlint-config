@@ -2,7 +2,7 @@
   "name": "@aelita-dev/oxlint-config",
   "type": "module",
   "version": "1.2.1",
-  "packageManager": "pnpm@11.4.0",
+  "packageManager": "pnpm@11.5.2",
   "description": "Aelita's OXLint config",
   "author": "Aelita <https://github.com/xsjcTony",
   "license": "MIT",
@@ -42,34 +42,34 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
   },
   "peerDependencies": {
-    "oxlint": "^1.67.0"
+    "oxlint": "^1.69.0"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tanstack/eslint-plugin-query": "^5.100.14",
+    "@tanstack/eslint-plugin-query": "^5.101.0",
     "@tanstack/eslint-plugin-router": "^1.162.0",
     "eslint": "^10.4.0",
     "eslint-plugin-antfu": "^3.2.3",
-    "eslint-plugin-n": "^18.0.1",
+    "eslint-plugin-n": "^18.1.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-playwright": "^2.10.4",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-unicorn": "^64.0.0",
+    "eslint-plugin-unicorn": "^65.0.1",
     "globals": "^17.6.0",
     "local-pkg": "^1.2.1",
-    "oxlint-plugin-eslint": "^1.67.0",
+    "oxlint-plugin-eslint": "^1.69.0",
     "oxlint-tsgolint": "^0.23.0"
   },
   "devDependencies": {
-    "@types/node": "^22.19.19",
+    "@types/node": "^22.19.20",
     "bumpp": "^11.1.0",
     "changelogithub": "^14.0.0",
-    "lint-staged": "^17.0.5",
-    "oxlint": "^1.67.0",
+    "lint-staged": "^17.0.7",
+    "oxlint": "^1.69.0",
     "publint": "^0.3.21",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.22.0",
-    "tsx": "^4.22.3",
+    "tsdown": "^0.22.2",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "zx": "^8.8.5"
   },
