@@ -34,7 +34,7 @@ function vitestRules(options: VitestOptions): OxlintConfig['rules'] {
     'vitest/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],
     'vitest/no-identical-title': 'error',
     'vitest/no-import-node-test': 'error',
-    'vitest/no-focused-tests': isInEditor ? 'off' : ['error', { fixable: false }],
+    'vitest/no-focused-tests': isInEditor ? 'off' : 'error',
     'vitest/prefer-hooks-in-order': 'error',
     'vitest/prefer-lowercase-title': 'error',
     // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/4656

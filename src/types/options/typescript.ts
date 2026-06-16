@@ -33,11 +33,7 @@ export interface TypeScriptOptions extends
        *
        * @default []
        */
-      allow?: {
-        from: 'file' | 'lib' | 'package'
-        name: string | string[]
-        path?: string
-      }[]
+      allow?: (FileSpecifier | LibSpecifier | PackageSpecifier)[]
 
       /**
        * @default false
@@ -56,3 +52,23 @@ export interface TypeScriptOptions extends
     }
   }
 }
+
+
+interface FileSpecifier {
+  from: 'file'
+  name: NameSpecifier
+  path?: string
+}
+
+interface LibSpecifier {
+  from: 'lib'
+  name: NameSpecifier
+}
+
+interface PackageSpecifier {
+  from: 'package'
+  name: NameSpecifier
+  'package': string
+}
+
+type NameSpecifier = string | string[]

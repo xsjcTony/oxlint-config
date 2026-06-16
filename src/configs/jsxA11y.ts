@@ -84,7 +84,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
     ],
     'jsx-a11y/heading-has-content': [
       'error',
-      { components: headingHasContent?.extraComponents ?? null },
+      { components: headingHasContent?.extraComponents },
     ],
     'jsx-a11y/html-has-lang': 'error',
     'jsx-a11y/iframe-has-title': 'error',
@@ -173,7 +173,6 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ...noInteractiveElementToNoninteractiveRole,
       },
     ],
-    // TODO: not implemented yet - https://github.com/oxc-project/oxc/issues/1141
     'jsx-a11y/no-noninteractive-element-interactions': [
       'error',
       {
