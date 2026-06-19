@@ -39,7 +39,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
     noDistractingElements,
     noInteractiveElementToNoninteractiveRole,
     noNoninteractiveElementInteractions,
-    noNoninteractiveElementToInteractiveRole,
+    // noNoninteractiveElementToInteractiveRole,
     noNoninteractiveTabindex,
     noStaticElementInteractions,
   } = ruleOptions
@@ -187,6 +187,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ],
       },
     ],
+    /*
     'jsx-a11y/no-noninteractive-element-to-interactive-role': [
       'error',
       {
@@ -198,6 +199,7 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         ...noNoninteractiveElementToInteractiveRole,
       },
     ],
+    */
     'jsx-a11y/no-noninteractive-tabindex': [
       'error',
       {
