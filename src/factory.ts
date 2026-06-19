@@ -2,6 +2,7 @@
 
 import type { OxlintConfig } from 'oxlint'
 import type { ConfigOptions } from '~types'
+import { fileURLToPath } from 'node:url'
 import { isPackageExists } from 'local-pkg'
 import {
   composeIgnorePatterns,
@@ -80,27 +81,27 @@ export function defineConfig(
       ...enableNativePlugin(!!enableJsxA11y, 'jsx-a11y'),
     ],
     jsPlugins: [
-      { name: 'eslint#js', specifier: 'oxlint-plugin-eslint' },
-      { name: 'unicorn#js', specifier: 'eslint-plugin-unicorn' },
-      { name: 'node#js', specifier: 'eslint-plugin-n' },
+      { name: 'eslint#js', specifier: resolveJsPlugin('oxlint-plugin-eslint') },
+      { name: 'unicorn#js', specifier: resolveJsPlugin('eslint-plugin-unicorn') },
+      { name: 'node#js', specifier: resolveJsPlugin('eslint-plugin-n') },
       ...enableJsPlugin(!!stylisticOptions, [
-        { name: 'style#js', specifier: '@stylistic/eslint-plugin' },
-        { name: 'antfu#js', specifier: 'eslint-plugin-antfu' },
+        { name: 'style#js', specifier: resolveJsPlugin('@stylistic/eslint-plugin') },
+        { name: 'antfu#js', specifier: resolveJsPlugin('eslint-plugin-antfu') },
       ]),
       ...enableJsPlugin(!!enablePerfectionist, [
-        { name: 'perfectionist#js', specifier: 'eslint-plugin-perfectionist' },
+        { name: 'perfectionist#js', specifier: resolveJsPlugin('eslint-plugin-perfectionist') },
       ]),
       ...enableJsPlugin(!!enableReact, [
-        { name: 'react#js', specifier: 'eslint-plugin-react' },
+        { name: 'react#js', specifier: resolveJsPlugin('eslint-plugin-react') },
       ]),
       ...enableJsPlugin(!!enablePlaywright, [
-        { name: 'playwright#js', specifier: 'eslint-plugin-playwright' },
+        { name: 'playwright#js', specifier: resolveJsPlugin('eslint-plugin-playwright') },
       ]),
       ...enableJsPlugin(!!enableTanStackQuery, [
-        { name: 'tanstack-query#js', specifier: '@tanstack/eslint-plugin-query' },
+        { name: 'tanstack-query#js', specifier: resolveJsPlugin('@tanstack/eslint-plugin-query') },
       ]),
       ...enableJsPlugin(!!enableTanStackRouter, [
-        { name: 'tanstack-router#js', specifier: '@tanstack/eslint-plugin-router' },
+        { name: 'tanstack-router#js', specifier: resolveJsPlugin('@tanstack/eslint-plugin-router') },
       ]),
     ],
     categories: {
@@ -289,6 +290,11 @@ function enableNativePlugin<const T extends NonNullable<OxlintConfig['plugins']>
   plugin: T,
 ): T[] {
   return enabled ? [plugin] : []
+}
+
+
+function resolveJsPlugin(packageName: string): string {
+  return fileURLToPath(import.meta.resolve(packageName))
 }
 
 
