@@ -1,7 +1,7 @@
 {
   "name": "@aelita-dev/oxlint-config",
   "type": "module",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "packageManager": "pnpm@11.8.0",
   "description": "Aelita's OXLint config",
   "author": "Aelita <https://github.com/xsjcTony",
