@@ -61,7 +61,7 @@
     "oxlint-tsgolint": "^0.23.0"
   },
   "devDependencies": {
-    "@types/node": "^22.19.21",
+    "@types/node": "^24.13.2",
     "bumpp": "^11.1.0",
     "changelogithub": "^14.0.0",
     "lint-staged": "^17.0.7",
