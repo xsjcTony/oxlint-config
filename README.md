@@ -12,6 +12,8 @@ pnpm add -D oxlint @aelita-dev/oxlint-config
 
 Oxlint is a peer dependency, so install it alongside this package.
 
+This package is ESM-only. Use `import` rather than CommonJS `require()`.
+
 ## Usage
 
 Create `oxlint.config.ts`:

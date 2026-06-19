@@ -7,7 +7,7 @@ export default defineConfig({
   ],
   outDir: 'dist',
   clean: true,
-  format: ['esm', 'cjs'],
+  format: ['esm'],
   dts: true,
   exports: {
     packageJson: false,
