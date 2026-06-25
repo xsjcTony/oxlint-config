@@ -21,7 +21,9 @@ export interface JsxA11yOptions extends OptionsFiles {
      * @see https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/anchor-is-valid
      */
     anchorIsValid?: {
-      validHrefs?: string[]
+      aspects?: ('noHref' | 'invalidHref' | 'preferButton')[]
+      components?: string[]
+      specialLink?: string[]
     }
 
     /**

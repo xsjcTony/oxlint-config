@@ -5,4 +5,11 @@ export default defineConfig({
   options: {
     projectType: 'lib',
   },
+  vue: true,
+  react: true,
+  jsxA11y: true,
+  playwright: true,
+  vitest: true,
+  tanStackQuery: true,
+  tanStackRouter: true,
 })

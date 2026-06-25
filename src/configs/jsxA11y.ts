@@ -55,7 +55,14 @@ function jsxA11yRules(options: JsxA11yOptions): OxlintConfig['rules'] {
         object: altText?.object ?? [],
       },
     ],
-    'jsx-a11y/anchor-is-valid': ['error', { validHrefs: anchorIsValid?.validHrefs ?? [] }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        aspects: anchorIsValid?.aspects ?? [],
+        components: anchorIsValid?.components ?? [],
+        specialLink: anchorIsValid?.specialLink ?? [],
+      },
+    ],
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
     'jsx-a11y/aria-props': 'error',
     'jsx-a11y/aria-proptypes': 'error',
