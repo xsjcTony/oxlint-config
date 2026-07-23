@@ -42,7 +42,8 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
   },
   "peerDependencies": {
-    "oxlint": "1.74.0"
+    "oxlint": "1.74.0",
+    "oxlint-tsgolint": "0.25.0"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
