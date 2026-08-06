@@ -69,6 +69,7 @@ const javascriptRules: OxlintConfig['rules'] = {
   'no-dupe-class-members': 'error',
   'no-iterator': 'error',
   'no-undef': ['error', { 'typeof': true }],
+  'no-undefined': 'error',
   'no-unused-vars': [
     'warn',
     {
